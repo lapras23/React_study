@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 
-// 이런 방식은 보안에 좋지 않다
+// 이런 방식은 보안에 좋지 않다.
 const Admin = () => {
   const [password, setPassword] = useState("");
   const [isAdmin, setAdmin] = useState(false);

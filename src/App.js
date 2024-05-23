@@ -1,35 +1,8 @@
 import "./App.css";
-import { useState } from "react";
-
-const TicketNumber = () => {
-  const [ticketNumber, setTicketNumber] = useState("");
-  const onChange = (e) => {
-    const [first = "", second = ""] = e.target.value
-      .replace(/[^0-9a-z]/gi, "")
-      .slice(0, 6)
-      .match(/.{0,3}/g);
-    const value = first.length === 3 ? `${first}-${second}` : first;
-    setTicketNumber(value.toUpperCase());
-  };
-  const isValid = ticketNumber.length === 7;
-
-  return (
-    <form style={{ display: "flex" }}>
-      <label>
-        Ticket number:
-        <input
-          value={ticketNumber}
-          onChange={onChange}
-          placeholder="E.g. R1S-T2U"
-        />
-      </label>
-      <span>{isValid ? "✓" : "✗"}</span>
-    </form>
-  );
-};
+import { useReducer, useEffect } from "react";
 
 function App() {
-  return <TicketNumber />;
+  return;
 }
 
 export default App;
