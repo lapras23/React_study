@@ -1,3 +1,5 @@
-## README
+## 📝 React 공부한 내용들 정리
 
-    - ReactQuickly Second Edition 교재를 보면서 공부한 코드들입니다.
+## 01. ReactQuickly Second Edition
+
+    - 추가 예정
